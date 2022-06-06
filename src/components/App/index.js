@@ -1,14 +1,20 @@
 // == Import
-import reactLogo from './react-logo.svg';
-import './styles.css';
+import React from "react";
 
 // == Composant
-const App = () => (
-  <div className="app">
-    <img src={reactLogo} alt="react logo" />
-    <h1>Composant : App</h1>
-  </div>
-);
+import SearchBar from "src/components/SearchBar";
+import Message from "src/components/Message";
+import ReposResults from "src/components/ReposResults";
+
+function App() {
+  return(
+    <div className="app">
+      <SearchBar />
+      <Message />
+      <ReposResults />
+    </div>
+  )
+}
 
 // == Export
 export default App;
